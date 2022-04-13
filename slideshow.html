@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8 />
+		<title>Picture Slideshow</title>
+	</head>
+	<body>
+			<style>
+		body {
+			background-color:#000000;
+		}
+		p {
+			color:#FFFFFF;
+		}
+		form {
+			color:#FFFFFF;
+		}
+		input {
+			color:#FFFFFF;
+			background-color:#808080;
+		}
+		
+		 #slideshow {
+        overflow: hidden;
+        height: 250px;
+        width: 500px;
+        margin: 0 auto;
+    }
+     
+    .slide {
+        float: left;
+        height: 300px;
+        width: 550px;
+    }
+     
+    .slide-wrapper {
+
+        width: calc(550px * 4);
+
+        animation: slide 30s ease infinite;
+    }
+     
+    @keyframes slide {
+
+        20% {
+            margin-left: 0px;
+        }
+        40% {
+            margin-left: calc(-550px * 1);
+        }
+        60% {
+            margin-left: calc(-550px * 2);
+        }
+        80% {
+            margin-left: calc(-550px * 3);
+        }
+    }
+		</style>
+<div id="slideshow">
+        <div class="slide-wrapper">
+
+            <div class="slide">
+                <img src="IMG1.jpeg", height="250px", width="500px"/>
+            </div>
+            <div class="slide">
+                <img src="IMG2.jpeg", height="250px", width="500px"/>
+            </div>
+            <div class="slide">
+                <img src="IMG3.jpeg", height="250px", width="500px"/>
+            </div>
+            <div class="slide">
+                <img src="IMG4.jpeg", height="250px", width="500px"/>
+            </div>
+        </div>
+    </div>
+	</body>
+</html>

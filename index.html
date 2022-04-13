@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Personal Website</title>
+</head>
+<style>
+	body {
+		background-color:#000000;
+	}
+	h1 {
+		color:#FFFFFF;
+	}
+	h2 {
+		color:#FFFFFF;
+	}
+	p {
+		color:#FFFFFF;
+	}
+	li {
+		color:#FFFFFF;
+	}
+	th {
+		color:#FFFFFF;
+	}
+	td {
+		color:#FFFFFF;
+	}
+			 #slideshow {
+        overflow: hidden;
+        height: 250px;
+        width: 500px;
+        margin: 0 auto;
+    }
+     
+    .slide {
+        float: left;
+        height: 300px;
+        width: 550px;
+    }
+     
+    .slide-wrapper {
+
+        width: calc(550px * 4);
+
+        animation: slide 30s ease infinite;
+    }
+     
+    @keyframes slide {
+
+        20% {
+            margin-left: 0px;
+        }
+        40% {
+            margin-left: calc(-550px * 1);
+        }
+        60% {
+            margin-left: calc(-550px * 2);
+        }
+        80% {
+            margin-left: calc(-550px * 3);
+        }
+    }
+</style>
+<body>
+<audio controls autoplay loop>
+  <source src="music.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<h1>My name is Richard Persaud</h1>
+<p>This page was updated on February 9th, 2022.</p>
+
+<a href="math.html">Do some math</a><br>
+<a href="prime.html">Check if a number if prime</a><br>
+<a href="slideshow.html">Look at a promotional slideshow</a><br>
+<a href="music.mp3">Check out the music above</a><br>
+<a href="image.html">Encrypt an image</a>
+
+<h2> Current Classes: </h2>
+ <li> CST-111 </li>
+ <li> PSY-102 </li>
+ <li> PHI-105 </li>
+ <li> COM-263 </li>
+
+<h2>Where I've lived:</h2>
+<table border="1", style="border-color:white;">
+	<tr>
+		<th><b>City</b></th>
+		<th><b>Years</b></th>
+	</tr>
+	<tr>
+		<td>Annapolis, Maryland</td>
+		<td>3</td>
+	</tr>
+	<tr>
+		<td>Gallitzin, Pennsylvania</td>
+		<td>6</td>
+	</tr>
+	<tr>
+		<td>Glendale, Arizona</td>
+		<td>9</td>
+	</tr>
+</table>
+<h2>About the music</h2>
+<p>This music is based off of the popular Christmas music, God Rest Ye Merry Gentlemen. I basically put it into an online sequencer and added sounds that I though complemented the music or added to it in a way that improved it overall.</p><br>
+<h2>Here is my most recently played game:</h2>
+	<li>Rainbow Six Extraction.</li>
+	<li>My favorite character is Doc. I am preferential to healer classes.</li>
+	<p/>
+	<a href="https://www.ubisoft.com/en-us/game/rainbow-six/extraction", style="font-size:25px; color:yellow;">Check out Rainbow Six Extraction here</a>
+	<p> Rainbow Six Extraction is a game where you play as one of a handful of operators, entering an 'Incursion Zone' to complete objectives while avoiding or killing 'Archaeans', this game's NPC enemy. The game is a PvE, meaning that the game is only a co-operative game, not particularly competitive. This PvE aspect draws me, as I love the allure of working together on objectives while fighting an endless horde. This game is very reminiscent of similar co-op PvE games such as 'Plants vs. Zombies', 'Left 4 Dead', and other various, primarily zombie-based, games. My primary gripe with the game is the occasionally janky detection mechanics that the Archaeans have, which causes some problems if you want to fully stealth a mission, like I try to do.</p>
+
+<div id="slideshow">
+        <div class="slide-wrapper">
+
+            <div class="slide">
+                <img src="IMG1.jpeg", height="250px", width="500px"/>
+            </div>
+            <div class="slide">
+                <img src="IMG2.jpeg", height="250px", width="500px"/>
+            </div>
+            <div class="slide">
+                <img src="IMG3.jpeg", height="250px", width="500px"/>
+            </div>
+            <div class="slide">
+                <img src="IMG4.jpeg", height="250px", width="500px"/>
+            </div>
+        </div>
+    </div>
+<br><a href="register.html", style="font-size:25px; color:white;">Sign up for updates on this website!</a>
+</body>
+</html>
