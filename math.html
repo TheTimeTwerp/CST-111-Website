@@ -3,37 +3,9 @@
 	<head>
 		<meta charset=utf-8 />
 		<title>JavaScript multiple and divide</title>
-	</head>
-	<script type="text/javascript"></script>
-	<script>
-			function multiplyBy()
-{
-	num1 = document.getElementById("firstNumber").value;
-	num2 = document.getElementById("secondNumber").value;
-	document.getElementById("result").innerHTML = num1 * num2;
-}
-
-function divideBy()
-{
-	num1 = document.getElementById("firstNumber").value;
-	num2 = document.getElementById("secondNumber").value;
-	document.getElementById("result").innerHTML = num1 / num2;
-}
-
-function prime()
-{
-	num1 = document.getElementByID("prime").value;
-	result = false
-	for i in num1 do
-		if i>1
-			for j in range(2,i)
-				if(i % j == 0)
-					break
-				else
-					result = true
-}
-	</script>
-	<body>
+</head>
+<script src="math.js"></script>
+<body>
 			<style>
 		body {
 			background-color:#000000;
@@ -52,18 +24,18 @@ function prime()
 			color:#FFFFFF;
 		}
 		</style>
-		<br>
-		<br>
-		<form>
-			1st Number : <input type="text" id="firstNumber" /><br>
-			2nd Number : <input type="text" id="secondNumber" /><br>
-			Prime Number Check : <input type="text" id="primeNumber" /><br>
-			<input type="button" onClick="multiplyBy()" Value="Multiply"/>
-			<input type="button" onClick="divideBy()" Value="Divide"/>
-			<input type="button" onClick="prime()" Value="Prime Check Number"/>
-		</form>
-		<p> The result is : <br>
-		<span id= "result"></span><br>
-		</p>
-	</body>
+<br>
+<br>
+<form>
+1st Number : <input type="text" id="firstNumber" /><br>
+2nd Number : <input type="text" id="secondNumber" /><br>
+Prime or Not : <input type="text" id="primeNumber" /><br>
+<input type="button" onClick="multiplyBy()" Value="Multiply" />
+<input type="button" onCLick="divideBy()" Value="Divide" />
+<input type="button" onCLick="primeOrNot()" Value="Prime or Not" />
+</form>
+</p>The Result is : <br>
+<span id = "result"></span>
+</p>
+</body>
 </html>
