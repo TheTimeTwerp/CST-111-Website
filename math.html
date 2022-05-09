@@ -7,34 +7,38 @@
 	<script type="text/javascript">
 		function multiplyBy()
 		{
-			num1 = document.first.value;
-			num2 = document.second.value;
-			alert(num1 + " times " + num2 + " = " + (num1*num2));
+				n1 = document.prime.first.value;
+				n1 = parseInt(n1)
+				n2 = document.prime.second.value;
+				n2 = parseInt(n2)
+			alert(n1 + " times " + n2 + " = " + (n1*n2));
 		}
 
 		function divideBy()
 		{
-			num1 = document.first.value;
-			num2 = document.second.value;
-			alert(num1 + " divided by " + num2 + " = " + (num1/num2));
+				n1 = document.prime.first.value;
+				n1 = parseInt(n1)
+				n2 = document.prime.second.value;
+				n2 = parseInt(n2)
+			alert(n1 + " divided by " + n2 + " = " + (n1/n2));
 		}
 
-		function prime()
-		{
-			num1 = document.prime.value;
-			result = false
-			for i in num1 do
-				if i>1
-					for j in range(2,i)
-						if(i % j == 0)
-							break
-						else
-							result = true
-			if result == true then
-				alert(num1 + " is a prime number.");
-			else
-				alert(num1 + " is a prime number.");
-		}
+			function prime()
+			{
+				var n, i, flag = true;
+				n = document.prime.n.value;
+				n = parseInt(n)
+				for(i = 2; i <= n - 1; i++)
+					if (n % i == 0)
+					{
+						flag = false;
+						break
+					}
+				if (flag==true)
+					alert(n + " is prime.");
+				else
+					alert(n + " is not prime.");
+			}
 	</script>
 	<body>
 			<style>
