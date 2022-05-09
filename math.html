@@ -4,42 +4,7 @@
 		<meta charset=utf-8 />
 		<title>JavaScript multiple and divide</title>
 	</head>
-	<script type="text/javascript">
-		function multiplyBy()
-		{
-				n1 = document.forum.first.value;
-				n1 = parseInt(n1)
-				n2 = document.forum.second.value;
-				n2 = parseInt(n2)
-			alert(n1 + " times " + n2 + " = " + (n1*n2));
-		}
-
-		function divideBy()
-		{
-				n1 = document.forum.first.value;
-				n1 = parseInt(n1)
-				n2 = document.forum.second.value;
-				n2 = parseInt(n2)
-			alert(n1 + " divided by " + n2 + " = " + (n1/n2));
-		}
-
-			function prime()
-			{
-				var n, i, flag = true;
-				n = document.forum.n.value;
-				n = parseInt(n)
-				for(i = 2; i <= n - 1; i++)
-					if (n % i == 0)
-					{
-						flag = false;
-						break
-					}
-				if (flag==true)
-					alert(n + " is prime.");
-				else
-					alert(n + " is not prime.");
-			}
-	</script>
+	<script src="math.js"></script>
 	<body>
 			<style>
 		body {
@@ -57,10 +22,10 @@
 		}
 		</style>
 		<br><br>
-		<form name="forum">
-			1st Number: <input type="text" name=first id="firstNumber" /><br>
-			2nd Number: <input type="text" nae=second id="secondNumber" /><br>
-			Prime: <input type="text" name=prime id="prime" /><br><br>
+		<form>
+			1st Number: <input type="text" id="firstNumber" /><br>
+			2nd Number: <input type="text" id="secondNumber" /><br>
+			Prime: <input type="text" id="prime" /><br><br>
 			<input type="button" onClick="multiplyBy()" Value="Multiply" />
 			<input type="button" onClick="divideBy()" Value="Divide" />
 			<input type="button" onClick="prime()" Value="Prime or not?" />
