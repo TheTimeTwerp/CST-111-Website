@@ -7,21 +7,21 @@
 	<script type="text/javascript">
 		function multiplyBy()
 		{
-			num1 = document.getElementById("firstNumber").value;
-			num2 = document.getElementById("secondNumber").value;
-			document.getElementById("result").innerHTML = num1 * num2;
+			num1 = document.first.value;
+			num2 = document.second.value;
+			alert(num1 + " times " + num2 + " = " + (num1*num2));
 		}
 
 		function divideBy()
 		{
-			num1 = document.getElementById("firstNumber").value;
-			num2 = document.getElementById("secondNumber").value;
-			document.getElementById("result").innerHTML = num1 / num2;
+			num1 = document.first.value;
+			num2 = document.second.value;
+			alert(num1 + " divided by " + num2 + " = " + (num1/num2));
 		}
 
 		function prime()
 		{
-			num1 = document.getElementByID("prime").value;
+			num1 = document.prime.value;
 			result = false
 			for i in num1 do
 				if i>1
@@ -30,6 +30,10 @@
 							break
 						else
 							result = true
+			if result == true then
+				alert(num1 + " is a prime number.");
+			else
+				alert(num1 + " is a prime number.");
 		}
 	</script>
 	<body>
@@ -50,14 +54,12 @@
 		</style>
 		<br><br>
 		<form>
-			1st Number: <input type="text" id="firstNumber" /><br>
-			2nd Number: <input type="text" id="secondNumber" /><br>
-			Prime: <input type="text" id="prime" /><br><br>
+			1st Number: <input type="text" name="first" id="firstNumber" /><br>
+			2nd Number: <input type="text" nae="second" id="secondNumber" /><br>
+			Prime: <input type="text" name="prime" id="prime" /><br><br>
 			<input type="button" onClick="multiplyBy()" Value="Multiply" />
 			<input type="button" onClick="divideBy()" Value="Divide" />
 			<input type="button" onClick="prime()" Value="Prime or not?" />
 		</form>
-		<p>The result is: <br>
-		<span id="result"></span></p>
 	</body>
 </html>
